@@ -1,0 +1,11 @@
+<form>
+  <label for="uinput">Enter String To Reverse:</label>
+  <input type="text" id="uinput" name="uinput" [(ngModel)]="strForReversal">
+</form>
+
+     
+    <button (click)="reserveString()" class="btn btn-primary" >Reverse</button>
+   <br>
+   <br>
+
+  <div class="well well-lg"><h3>Reversed String:{{strAfterReversal}}</h3></div>

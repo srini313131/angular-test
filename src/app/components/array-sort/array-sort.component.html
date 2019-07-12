@@ -1,0 +1,11 @@
+<div class="well well-lg">Press The Button To Sort Aletrnative By X And Y Values</div>
+<ul><span class="badge"> Array To Sort</span> 
+    <li *ngFor="let value of jsonArray">{{value| json}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let value of a">{{value}}</li>
+</ul>
+<button (click)="sort()" class="btn btn-primary">sort</button><br><br>
+
+<div class="well "> The switch toggles between sorting by the x keys and y keys </div>

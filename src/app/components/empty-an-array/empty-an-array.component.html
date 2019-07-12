@@ -1,0 +1,29 @@
+<div class="well" style="background-color: lightgray">
+       <h3>Click To Fill The Array Again:</h3>
+        <button (click)="reload()" class="btn btn-primary">Reload Array</button>
+
+</div>
+      <div style="height: 30vh">
+          <ul>
+              <li *ngFor="let fruit of fruits">
+                    {{fruit}}
+              </li>
+          </ul>
+      </div>
+      
+      <button (click)="EmptyByPop()" class="btn btn-default">Pop Method</button>
+      <button (click)="EmptyByLength()" class="btn btn-default"> length Zero</button>
+      <button (click)="EmptyByShift()"  class="btn btn-default">Shift Method</button>
+      <button (click)="EmptyBySplice()" class="btn btn-default">Splice Method</button>
+
+
+    
+    
+    
+    
+    
+
+
+
+
+

@@ -1,0 +1,23 @@
+<div class="alert alert-danger" *ngIf="isValid">Invalid Credentials</div>
+<form #loginform="ngForm" (ngSubmit)="login($event)">
+  <div class="form-group">
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" class="form-control" ngModel #userName placeholder="User Name" autocomplete="on" required>
+</div>
+<div class="form-group">
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" class="form-control"   #password ngModel placeholder="Password" autocomplete="on" required>
+</div>
+<!-- <div [hidden]="password.pristine || password.valid">Required</div> -->
+<div class="form-group">
+    <label for="role">Select Role*</label>
+      <select id="role" class="form-control" >
+          <option >Select From Dropdown</option>
+          <option>Project Manager</option>
+          <option>Team Lead</option>
+          <option>Developer</option>
+          <option>Tester</option>
+      </select>
+  </div>
+<button type="submit" class="btn btn-primary" [disabled]="!loginform.form.valid" >Login</button>
+</form>

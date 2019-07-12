@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+    <form>
+        <div class="form-group">
+            <label for="userinput">Enter Numbers Seperated By comma:</label>
+            <input type="text" id="userinput" [(ngModel)]="userInput" name="userinput" #uinput> 
+        </div>
+        <button class="btn btn-info" style="display: inline" (click)="makeArray()">Make Array</button>
+    </form>
+</div>
+
+
+<ul> sample Array
+    <li *ngFor="let number of sampleArray">{{number}}</li>
+</ul>
+<div class="alert alert-success">Sum Of The Largest Numbers Entered: {{sum}}</div>
+
+<button class="btn btn-success" (click)="desiredSum()">Find Sum</button>

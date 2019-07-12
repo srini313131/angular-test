@@ -1,0 +1,21 @@
+
+<div class="jumbotron">
+        <form>
+            <div class="form-group">
+                <label for="userinput">Enter Numbers Seperated By comma:</label>
+                <input type="text" id="userinput" [(ngModel)]="userInput" name="userinput" #uinput> 
+            </div>
+            <div class="form-group">
+                    <label for="sum">Enter Sum</label>
+                    <input type="number" id="sum" [(ngModel)]="targetSum" name="targetsum" #usum> 
+                </div>
+            <button class="btn btn-info" style="display: inline" (click)="makeArray()">Make Array</button>
+        </form>
+    </div><ul>
+    <li *ngFor="let number of numbers">{{number}}</li>
+</ul>
+<div class="well well-lg">{{one}}, {{two}}</div>
+
+
+<button (click)="findPairs(numbers,targetSum)">click</button>
+ 
